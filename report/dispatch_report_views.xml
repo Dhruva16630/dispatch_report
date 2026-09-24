@@ -10,9 +10,10 @@
                 <field name="total_demand"/>
                 <field name="quantity_to_deliver"/>
                 <field name="uom"/>
+                <field name="hsn_code"/>
                 <field name="barcode"/>
                 <field name="fiscal_position"/>
-                <field name="payment_terms"/>
+                <field name="payment_terms" optional = "hide"/>
                 <field name="internal_reference"/>
                 <field name="scheduled_date"/>
             </list>

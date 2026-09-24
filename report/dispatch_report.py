@@ -32,6 +32,11 @@ class DispatchReport(models.Model):
         string="UoM",
         readonly=True,
     )
+    
+    hsn_code = fields.Char(
+        string="HSN Code",
+        readonly = True
+    )
 
     barcode = fields.Char(
         string="Barcode",
@@ -82,6 +87,8 @@ class DispatchReport(models.Model):
                         AS quantity_to_deliver,
 
                     sm.product_uom AS uom,
+                    
+                    pt.l10n_in_hsn_code AS hsn_code,
 
                     pp.barcode AS barcode,
 
